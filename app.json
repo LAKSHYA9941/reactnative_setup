@@ -1,31 +1,33 @@
 {
   "expo": {
-    "name": "project1",
-    "slug": "project1",
+    "name": "Nocto Movlo",
+    "slug": "Nocto Movlo",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "project1",
+    "icon": "./assets/images/Hours.png",
+    "scheme": "Nocto Movlo",
     "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
+    
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "icon": "./assets/images/Hours.png"
     },
+
     "android": {
+      "icon": "./assets/images/Hours.png",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/images/android-icon-foreground.png",
-        "backgroundImage": "./assets/images/android-icon-background.png",
-        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+        "backgroundColor": "#FFFFFF"
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false
     },
+
     "web": {
+      "favicon": "./assets/images/Hours.png",
       "output": "static",
-      "favicon": "./assets/images/favicon.png",
       "bundler": "metro"
     },
+
     "plugins": [
       "expo-router",
       [
@@ -41,6 +43,7 @@
         }
       ]
     ],
+
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true

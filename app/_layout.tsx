@@ -1,13 +1,25 @@
 import { Stack } from "expo-router";
-import { useEffect } from "react";
-import { StyleSheet } from "react-native";
 import './globals.css';
+import { PaperProvider } from "react-native-paper";
+import { SafeAreaProvider } from "react-native-safe-area-context";
 
 export default function RootLayout() {
-  useEffect(() => {
-    // This is needed for NativeWind to work properly
-    StyleSheet.create({});
-  }, []);
 
-  return <Stack />;
+
+  return (
+    <SafeAreaProvider>
+      <PaperProvider>
+        <Stack>
+          <Stack.Screen
+            name="(tabs)"
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen
+            name="movies/[id]"
+            options={{ headerShown: false }}
+          />
+        </Stack>
+      </PaperProvider>
+    </SafeAreaProvider>
+  )
 }
